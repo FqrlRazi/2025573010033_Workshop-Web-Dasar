@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List dan tabel</title>
+  </head>
+  <body>
+    <h1>Jenis-Jenis List</h1>
+    <!-- Unordered List: urutan tidak penting -->
+    <h2>Teknologi yang Dipelajari</h2>
+    <ul>
+      <li>HTML — struktur halaman</li>
+      <li>
+        CSS — tampilan halaman
+        <ul>
+          <li>Flexbox</li>
+          <li>Grid</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </li>
+      <li>JavaScript — interaktivitas</li>
+      <li>React — library UI</li>
+    </ul>
+    <!-- Ordered List: urutan penting -->
+    <h2>Langkah Membuat Halaman Web</h2>
+    <ol>
+      <li>Buat file <code>index.html</code></li>
+      <li>Tulis struktur HTML</li>
+      <li>Tambahkan CSS untuk styling</li>
+      <li>Tambahkan JavaScript untuk interaktivitas</li>
+      <li>Deploy ke server</li>
+    </ol>
+    <!-- Description List: pasangan istilah dan definisi -->
+    <h2>Glosarium</h2>
+    <dl>
+      <dt><strong>HTML</strong></dt>
+      <dd>
+        HyperText Markup Language — bahasa markup untuk membuat halaman web
+      </dd>
+      <dt><strong>CSS</strong></dt>
+      <dd>
+        Cascading Style Sheets — bahasa styling untuk mengatur tampilan halaman
+        web
+      </dd>
+      <dt><strong>DOM</strong></dt>
+      <dd>
+        Document Object Model — representasi HTML sebagai struktur pohon yang
+        bisa dimanipulasi JavaScript
+      </dd>
+    </dl>
+
+    <h2>Jadwal Workshop Web</h2>
+    <table border="6">
+      <thead>
+        <tr>
+          <th scope="col">Pertemuan</th>
+          <th scope="col">Topik</th>
+          <th scope="col">Durasi</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>HTML Fundamentals</td>
+          <td>4 jam</td>
+          <td>Selesai</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CSS Fundamentals</td>
+          <td>4 jam</td>
+          <td>Akan datang</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total pertemuan: 2</td>
+          <td>8 jam</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
