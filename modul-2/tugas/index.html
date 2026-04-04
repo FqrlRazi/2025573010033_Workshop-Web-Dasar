@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Portofolio</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        margin: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <h3>Faqroel</h3>
+        <a href="#Home">About</a> | <a href="#Skill">Skill</a> |
+        <a href="#Experience">Experience</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <br /><br />
+      <!-- About -->
+      <section id="Home">
+        <h1>About Me</h1>
+        <img
+          src="WhatsApp_Image_2026-04-04_at_8.33.33_PM-removebg-preview.png"
+          alt="Faqroel Razi Photo Profile"
+          width="250"
+          height="400"
+          style="border-radius: 20%"
+        />
+        <p>
+          Halo, saya Faqroel, seorang web developer yang bersemangat dengan
+          kecintaanan untuk menciptakan <br />
+          situs web yang indah dan fungsional. Dengan latar belakang di bidang
+          teknik informatika dan teknik komputer <br />
+          jaringan, saya telah mengasah keterampilan saya dalam HTML, CSS, dan
+          JavaScript untuk mewujudkan ide-ide <br />
+          di web. Saya menikmati bekerja pada pengembangan front-end dan
+          back-end, dan saya selalu bersemangat <br />
+          untuk belajar teknologi baru dan meningkatkan keterampilan saya.
+        </p>
+      </section>
+
+      <br /><br />
+
+      <!-- Skills -->
+      <section id="Skill">
+        <h1>Skills</h1>
+        <h3>My technical skill</h3>
+        <ul>
+          <li>Network System Administration</li>
+          <li>Web Frontend Development</li>
+          <li>Perbaiki kendaraan</li>
+        </ul>
+        <br />
+        <h3>My soft skill</h3>
+        <ul>
+          <li>Kerjasama Tim</li>
+          <li>Komunikasi</li>
+          <li>Penyelesaian Masalah</li>
+        </ul>
+      </section>
+
+      <br /><br />
+
+      <!-- Experience -->
+      <section id="Experience">
+        <h1>Experience</h1>
+        <ol>
+          <li>
+            <strong>Web Developer Frontend Magang</strong> di Gamelab Indonesia
+            (2024)
+            <br />
+            - Membangun dan memelihara situs web perusahaan menggunakan HTML,
+            CSS, dan JavaScript.
+            <br />
+            - Implementasi desain responsif untuk memastikan pengalaman pengguna
+            yang optimal di berbagai perangkat.
+          </li>
+          <br />
+          <li>
+            <strong>Administrasi jaringan</strong> di LKS IT NSA (2024)
+            <br />
+            - Membuat dan mengelola jaringan komputer, termasuk server, router,
+            switch dan firewall.
+            <br />
+            - Memantau kinerja jaringan dan melakukan pemeliharaan rutin untuk
+            memastikan stabilitas dan keamanan jaringan.
+          </li>
+          <br />
+          <li>
+            <strong>Mengambil Video sebagai pekerjaan lepas</strong> di SMK
+            Negeri 1 Bireuen (2024-2025)
+            <br />
+            - Memproduksi video untuk kebutuhhan tugas guru, dan melakukan
+            pengeditan video menggunakan software editing video <br />
+            untuk menghasilkan konten yang menarik dan berkualitas.
+          </li>
+          <br />
+          <li>
+            <strong>Berkerja Paruh Waktu</strong> di Motorcycle Steam (2020-now)
+            <br />
+            - Melakukan pembersihan dan perawatan pada sepeda motor, memastikan
+            kepuasan pelanggan.
+            <br />
+            - Menangani berbagai jenis sepeda motor dengan perhatian terhadap
+            detail untuk menjaga kualitas layanan.
+          </li>
+        </ol>
+      </section>
+
+      <br /><br />
+
+      <!-- Contact -->
+      <section id="contact">
+        <h1>Hubungi Saya</h1>
+        
+        <form action="#" method="post">
+          <!-- Nama Pengirim -->
+          <label for="nama">Nama:</label><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama kamu"
+            required
+          /><br /><br />
+
+          <!-- Email -->
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan email kamu"
+            required
+          /><br /><br />
+
+          <!-- Subjek Dropdown -->
+          <label for="subjek">Subjek:</label><br />
+          <select id="subjek" name="subjek" required>
+            <option value="">--Pilih Subjek--</option>
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="saran">Saran</option>
+            <option value="keluhan">Keluhan</option></select
+          ><br /><br />
+
+          <!-- Pesan -->
+          <label for="pesan">Pesan:</label><br />
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            cols="40"
+            placeholder="Tulis pesan kamu di sini..."
+            required
+          ></textarea
+          ><br /><br />
+
+          <!-- Tombol Kirim -->
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <br />
+
+    <footer>
+      <p>
+        <strong>Faqroel Razi</strong>
+      </p>
+      <a>Email: </a
+      ><a href="mailto:faqroelrazi@gmail.com" target="_blank"
+        >Email: faqroelrazi@gmail.com</a
+      >
+      | <a>Phone: </a>
+      <a href="tel:+6285281533553" target="_blank">+62 852-8153-3553</a> <br />
+      <a>LinkedIn: </a
+      ><a href="https://linkedin.com/in/faqroel-r-a56414312" target="_blank"
+        >linkedin.com/in/faqroel-r-a56414312</a
+      >
+      | <a>GitHub: </a
+      ><a href="https://github.com/FqrlRazi" target="_blank"
+        >github.com/FqrlRazi</a
+      >
+      <p>&copy; 2025 Faqroel Razi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
