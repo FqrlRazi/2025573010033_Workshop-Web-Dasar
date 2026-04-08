@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="box-model.css" />
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <div class="kotak-a">Kotak A (content-box)</div>
+    <div class="kotak-b">Kotak B (border-box)</div>
+    
+    <div class="demo-margin">
+      <div class="anak-1">Anak 1</div>
+      <div class="anak-2">Anak 2</div>
+    </div>
+
+    <h2>Demo Display Property</h2>
+
+    <div class="demo-display">
+      <p>
+        <strong>display: inline</strong> — elemen tidak mulai di baris baru,
+        width/height diabaikan:
+      </p>
+
+      <span class="kotak-inline">Span 1 (inline)</span>
+      <span class="kotak-inline">Span 2 (inline)</span>
+      <span class="kotak-inline">Span 3 (inline)</span>
+
+      <p style="margin-top: 15px">
+        <strong>display: inline-block</strong> — tidak mulai di baris baru, tapi
+        bisa diatur width/height:
+      </p>
+      <span class="kotak-inline-block">Blok 1<br />120×60</span>
+      <span class="kotak-inline-block">Blok 2<br />120×60</span>
+      <span class="kotak-inline-block">Blok 3<br />120×60</span>
+
+      <p style="margin-top: 15px">
+        <strong>display: none</strong> — elemen disembunyikan sepenuhnya (tidak
+        mengambil ruang):
+      </p>
+      <p>Elemen sebelum yang disembunyikan.</p>
+      <p style="display: none">Paragraf ini TIDAK tampil (display: none).</p>
+      <p>Elemen sesudahnya langsung mengisi ruang — tidak ada jarak kosong.</p>
+    </div>
+  </body>
+</html>

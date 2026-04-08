@@ -1,0 +1,70 @@
+h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.intro {
+  color: #27ae60;
+  font-style: italic;
+}
+
+#khusus {
+  background-color: #fef937;
+  padding: 10px;
+  border-left: 4px solid #f39c12;
+}
+
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+.aktif {
+  font-weight: bold;
+  border-bottom: 2px solid #f39c12;
+}
+
+.kartu > h2 {
+  color: #2471a3;
+}
+
+input[type="text"] {
+  border: 2px solid #bdc3c7;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #2471a3;
+  outline: none;
+}
+
+p {
+  color: black;
+}
+
+.teks-biru {
+  color: blue;
+}
+
+#teks-merah {
+  color: red;
+}
+
+.a {
+  color: orange;
+}
+
+.b {
+  color: purple;
+}

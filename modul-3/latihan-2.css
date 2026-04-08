@@ -1,0 +1,102 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --primary: #2F6B3F;
+  --dark: #7FB77E;
+  --light: #F7C85C;
+  --radius: 8px;
+  --font-main: Arial, sans-serif;
+}
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--dark);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-subscribe {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 30px;
+  background: white;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero .meta {
+  color: gray;
+  font-size: 14px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-top: 15px;
+}
+
+/* ================= MAIN ================= */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* KONTEN 70% */
+.content {
+  flex: 7;
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+/* SIDEBAR 30% */
+.sidebar {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: var(--dark);
+  color: white;
+}
+
+.footer div {
+  width: 30%;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warna, Tipografi & Unit CSS</title>
+    <link rel="stylesheet" href="tipografi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Demo Format Warna -->
+      <h1>Demo Warna CSS</h1>
+      <p>
+        Empat format warna berikut menghasilkan
+        <strong>warna yang sama</strong>:
+      </p>
+
+      <div class="kotak-warna warna-hex">Hex<br />#3498DB</div>
+      <div class="kotak-warna warna-rgb">RGB<br />rgb(52,152,219)</div>
+      <div class="kotak-warna warna-rgba">RGBA<br />opacity 0.4</div>
+      <div class="kotak-warna warna-hsl">HSL<br />hsl(204,70%,53%)</div>
+      <div class="kotak-warna warna-var">CSS Var<br />--warna-utama</div>
+
+      <h1>Demo Tipografi</h1>
+      <h2>Heading 2 — font-size: 1.75rem</h2>
+      <h3>Heading 3 — font-size: 1.25rem</h3>
+      <p>Paragraf normal — font-size: 1rem, line-height: 1.7.</p>
+      <p class="teks-besar">Teks besar — font-size: 1.25rem</p>
+      <p class="teks-kecil">Teks kecil — font-size: 0.875rem, warna abu</p>
+      <p class="teks-tengah">Teks rata tengah — text-align: center</p>
+      <p class="uppercase">Huruf kapital semua — text-transform: uppercase</p>
+      <p>
+        Link tanpa underline: <a href="#" class="no-underline">klik di sini</a>
+      </p>
+
+      <h1>Demo Unit CSS</h1>
+      <p class="font-px">Font 16px — tidak berubah jika user zoom browser</p>
+      <p class="font-rem">
+        Font 1rem — ikut preferensi user (lebih accessible)
+      </p>
+
+      <div class="hero">
+        <p>Tinggi 50vh — setengah tinggi viewport</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+  --warna-utama: #2e86c1;
+  --warna-aksen: #e74c3c;
+  --warna-teks: #2c3e50;
+  --warna-bg: #f8f9fa;
+  --font-utama: "Segoe UI", Arial, sans-serif;
+  --radius: 8px;
+}
+
+body {
+  background-color: var(--warna-bg);
+  color: var(--warna-teks);
+  font-family: var(--font-utama);
+}
+
+.warna-hex {
+  background-color: #3498db;
+}
+
+.warna-rgb {
+  background-color: rgb(52, 152, 219);
+}
+
+.warna-rgba {
+  background-color: rgba(52, 152, 219, 0.4);
+}
+
+.warna-hsl {
+  background-color: hsl(204, 70%, 53%);
+}
+
+.warna-var {
+  background-color: var(--warna-utama);
+}
+
+.kotak-warna {
+  display: inline-block;
+  width: 140px;
+  height: 60px;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: var(--radius);
+  vertical-align: top;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--warna-utama);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.teks-besar {
+  font-size: 1.25rem;
+}
+
+.teks-kecil {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.teks-tengah {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%; 
+  margin: 0 auto; 
+  padding: 0 1rem; 
+}
+
+.hero {
+  height: 50vh;
+  background: linear-gradient(135deg, var(--warna-utama), var(--warna-aksen));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.font-px {
+  font-size: 16px;
+} 
+
+.font-rem {
+  font-size: 1rem;
+}

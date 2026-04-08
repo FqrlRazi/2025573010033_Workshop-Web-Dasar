@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: Arial;
+}
+
+.kotak-a,
+.kotak-b {
+  width: 200px;
+  padding: 20px;
+  border: 4px solid #2471a3;
+  margin-bottom: 20px;
+  background: #d6eaf8;
+}
+
+.demo-margin {
+  background: #fdecea;
+  padding: 10px;
+}
+.anak-1,
+.anak-2 {
+  background: white;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
+
+.demo-display {
+margin-top: 20px;
+background: #F8F9FA;
+padding: 15px;
+border: 1px solid #ddd;
+}
+
+.kotak-inline {
+display: inline;
+width: 150px; 
+background: #FADBD8;
+padding: 5px 10px;
+}
+
+.kotak-inline-block {
+display: inline-block;
+width: 120px;
+height: 60px;
+background: #D5F5E3;
+padding: 5px;
+text-align: center;
+vertical-align: middle;
+border: 1px solid #27AE60;
+}

@@ -1,0 +1,161 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIABLES ================= */
+:root {
+  --primary: #6c4e31;
+  --secondary: #ffdbb5;
+  --dark: #372416;
+  --light: #92612d;
+  --text: #ffeac5;
+  --font-main: "Segoe UI", sans-serif;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  font-family: var(--font-main);
+  background: var(--light);
+  color: var(--text);
+}
+
+/* ================= HEADER ================= */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--dark);
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ================= SECTION ================= */
+section {
+  padding: 40px 30px;
+  margin: 3%;
+}
+
+/* ================= ABOUT ================= */
+#Home {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#Home img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+#Home p {
+  max-width: 600px;
+}
+
+/* ================= SKILL ================= */
+#Skill ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#Skill li {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* ================= EXPERIENCE ================= */
+#Experience {
+  line-height: 1.6;
+}
+
+/* ================= FORM ================= */
+form {
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border: 3px solid var(--primary);
+  outline: none;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--dark);
+  transition: .5s;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
