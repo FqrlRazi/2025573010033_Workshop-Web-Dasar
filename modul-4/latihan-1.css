@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Main Container Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+  min-height: 100vh;
+  gap: 0;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #34495e;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #2c3e50;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 0;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #2c3e50;
+  border-left-color: #3498db;
+}
+
+/* Main Content */
+.content {
+  grid-area: content;
+  padding: 2rem;
+}
+
+/* Statistik Container - 4 kartu dalam satu baris */
+.statistik {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Kartu Statistik */
+.kartu-statistik {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+  @keyframes naik {
+    0% {
+      transform: translateY(0); /* Posisi awal */
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px); /* Naik ke atas */
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0); /* Kembali ke posisi awal */
+      opacity: 1;
+    }
+  }
+.kartu-statistik:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Area Tabel dalam Kartu */
+.tabel-area {
+  padding: 1.5rem;
+  border-right: 1px solid #ecf0f1;
+}
+
+.tabel-area h3 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.tabel-area table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.tabel-area table tr {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.tabel-area table tr:last-child {
+  border-bottom: none;
+}
+
+.tabel-area table td {
+  padding: 1rem 0;
+}
+
+.tabel-area table td:first-child {
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+.tabel-area table td:last-child {
+  text-align: right;
+  padding: 1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Area Grafik dalam Kartu */
+.grafik-area {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.placeholder {
+  width: 80px;
+  height: 60px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  /* Sembunyikan sidebar */
+  .sidebar {
+    display: none;
+  }
+
+  /* Ubah grid layout - tanpa sidebar */
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content";
+  }
+
+  /* Ubah statistik menjadi 2 kolom untuk tablet */
+  .statistik {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Ukuran kartu lebih kecil */
+  .content {
+    padding: 1rem;
+  }
+
+  .tabel-area,
+  .grafik-area {
+    padding: 1rem;
+  }
+
+  .placeholder {
+    width: 60px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile: statistik menjadi 1 kolom */
+  .statistik {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .kartu-statistik {
+    grid-template-columns: 1fr;
+  }
+
+  .tabel-area {
+    border-right: none;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+  .placeholder {
+    width: 50px;
+    height: 50px;
+  }
+}

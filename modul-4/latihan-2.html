@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komponen Interaktif - Latihan 2</title>
+    <link rel="stylesheet" href="latihan-2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Komponen Interaktif</h1>
+
+      <!-- Section 1: Accordion/FAQ -->
+      <section class="accordion-section">
+        <h2>Accordion / FAQ</h2>
+        <div class="accordion">
+          <details>
+            <summary>Apa itu HTML?</summary>
+            <p>
+              HTML (HyperText Markup Language) adalah bahasa markup standar
+              untuk membuat halaman web. HTML memberikan struktur dan konten
+              pada halaman web.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apa perbedaan antara CSS dan HTML?</summary>
+            <p>
+              HTML digunakan untuk struktur dan konten, sementara CSS digunakan
+              untuk styling dan layout. HTML adalah "apa", CSS adalah "bagaimana
+              tampilannya".
+            </p>
+          </details>
+
+          <details>
+            <summary>Bagaimana cara membuat responsive design?</summary>
+            <p>
+              Responsive design dibuat menggunakan media queries, flexible
+              layouts dengan CSS Grid atau Flexbox, dan viewport meta tag.
+              Tujuannya agar website tampil baik di semua ukuran layar.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apa itu CSS Variables?</summary>
+            <p>
+              CSS Variables (Custom Properties) memungkinkan Anda mendefinisikan
+              nilai yang dapat digunakan kembali di seluruh stylesheet.
+              Dideklarasikan dengan -- di depan nama variabel.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Section 2: Image Hover Overlay -->
+      <section class="image-section">
+        <h2>Image Hover Overlay</h2>
+        <div class="image-gallery">
+          <div class="image-card">
+            <img
+              src="https://picsum.photos/300/300?random=1"
+              alt="Gallery Image 1"
+            />
+            <div class="overlay"></div>
+            <div class="image-title">Landscape 1</div>
+          </div>
+
+          <div class="image-card">
+            <img
+              src="https://picsum.photos/300/300?random=2"
+              alt="Gallery Image 2"
+            />
+            <div class="overlay"></div>
+            <div class="image-title">Landscape 2</div>
+          </div>
+
+          <div class="image-card">
+            <img
+              src="https://picsum.photos/300/300?random=3"
+              alt="Gallery Image 3"
+            />
+            <div class="overlay"></div>
+            <div class="image-title">Landscape 3</div>
+          </div>
+
+          <div class="image-card">
+            <img
+              src="https://picsum.photos/300/300?random=4"
+              alt="Gallery Image 4"
+            />
+            <div class="overlay"></div>
+            <div class="image-title">Landscape 4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Progress Bars -->
+      <section class="progress-section">
+        <h2>Progress Bars</h2>
+        <div class="progress-container">
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>HTML</span>
+              <span class="progress-value">75%</span>
+            </div>
+            <div class="progress-bar" style="--progress: 75%"></div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>CSS</span>
+              <span class="progress-value">85%</span>
+            </div>
+            <div class="progress-bar" style="--progress: 85%"></div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>JavaScript</span>
+              <span class="progress-value">60%</span>
+            </div>
+            <div class="progress-bar" style="--progress: 60%"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

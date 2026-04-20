@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 1.5rem;
+  background: #f8f9fa;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+/* ── Grid 3 kolom ── */
+.grid-dasar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.grid-dasar div {
+  background: #d6eaf8;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+/* ── Layout Halaman ── */
+.layout-halaman {
+  display: grid;
+  grid-template-columns: 200px 1fr 150px;
+  grid-template-rows: auto 300px auto;
+  grid-template-areas:
+    "header header header"
+    "sidebar konten aside"
+    "footer footer footer";
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.l-header {
+  grid-area: header;
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+}
+.l-sidebar {
+  grid-area: sidebar;
+  background: #d5f5e3;
+  padding: 1rem;
+}
+.l-konten {
+  grid-area: konten;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+.l-aside {
+  grid-area: aside;
+  background: #fef9e7;
+  padding: 1rem;
+}
+.l-footer {
+  grid-area: footer;
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+}
+/* ── Grid Responsif Otomatis ── */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+.grid-auto div {
+  background: #fadbd8;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.galeri div {
+  background: #d5d8dc;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+}
+/* Span 2 baris & 2 kolom */
+.g-besar {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: #2e86c1;
+  color: white;
+}
+/* Span seluruh lebar */
+.g-lebar {
+  grid-column: 1 / -1;
+  background: #27ae60;
+  color: white;
+}

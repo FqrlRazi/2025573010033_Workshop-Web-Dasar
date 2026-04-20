@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial;
+  padding: 1.5rem;
+}
+h2 {
+  margin: 1.5rem 0 0.75rem;
+  color: #2c3e50;
+}
+/* Tabel zebra stripe */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+}
+/* Baris genap diberi warna */
+tr:nth-child(even) td {
+  background: #ebf5fb;
+}
+/* Hover baris */
+tr:hover td {
+  background: #d6eaf8;
+}
+/* List tanpa border di item terakhir */
+.list-bersih {
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.list-bersih li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+/* :not menghindari border di item terakhir */
+.list-bersih li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.list-bersih li:last-child {
+  border-bottom: none;
+}
+/* Grid kartu dengan :nth-child */
+.grid-kartu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.grid-kartu div {
+  padding: 1.5rem;
+  background: #f2f3f4;
+  border-radius: 6px;
+  text-align: center;
+}
+/* Kartu ke-3 di-highlight */
+.grid-kartu div:nth-child(3n) {
+  background: #2e86c1;
+  color: white;
+  font-weight: bold;
+}
+/* Kartu pertama lebih besar */
+.grid-kartu div:first-child {
+  background: #27ae60;
+  color: white;
+}
+/* Kutipan dengan ::before & ::after */
+.kutipan {
+  position: relative;
+  background: #ebf5fb;
+  border-left: 4px solid #2e86c1;
+  padding: 1rem 1rem 1rem 3rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+.kutipan::before {
+  content: "\201C"; /* tanda kutip buka */
+  position: absolute;
+  left: 0.5rem;
+  top: -0.25rem;
+  font-size: 3rem;
+  color: #2e86c1;
+  line-height: 1;
+}
+/* Heading dengan garis di samping */
+.judul-garis {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 0.5rem;
+}
+.judul-garis::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #bdc3c7;
+}
+/* List dengan tanda centang */
+.list-centang {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+.list-centang li {
+  padding: 0.3rem 0 0.3rem 1.75rem;
+  position: relative;
+}
+.list-centang li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+/* Styling placeholder */
+.input-kustom {
+  border: 2px solid #ddd;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  outline: none;
+  margin-top: 0.5rem;
+}
+.input-kustom::placeholder {
+  color: #aab7b8;
+  font-style: italic;
+}
+.input-kustom:focus {
+  border-color: #2e86c1;
+}
