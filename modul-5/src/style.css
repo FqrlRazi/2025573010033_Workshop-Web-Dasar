@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .btn,
+  .btn-primary,
+  .btn-outline,
+  .btn-danger {
+    @apply inline-flex items-center justify-center
+    px-5 py-2.5 rounded-xl font-semibold text-sm
+    transition-all duration-200 cursor-pointer
+    focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-cyan-500 text-white hover:bg-cyan-600 focus:ring-cyan-500;
+  }
+
+  .btn-outline {
+    @apply border-2 border-slate-300 text-slate-700
+    hover:border-cyan-500 hover:text-cyan-600
+    focus:ring-cyan-500;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-500;
+  }
+
+  .input {
+    @apply w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm
+    bg-white dark:bg-slate-800 dark:border-slate-600
+    dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500
+    focus:border-transparent transition;
+  }
+}
