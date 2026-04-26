@@ -92,20 +92,20 @@ body {
   transition: box-shadow 0.3s;
 }
 
-  @keyframes naik {
-    0% {
-      transform: translateY(0); /* Posisi awal */
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(-10px); /* Naik ke atas */
-      opacity: 0.8;
-    }
-    100% {
-      transform: translateY(0); /* Kembali ke posisi awal */
-      opacity: 1;
-    }
+@keyframes naik {
+  0% {
+    transform: translateY(0); /* Posisi awal */
+    opacity: 1;
   }
+  50% {
+    transform: translateY(-10px); /* Naik ke atas */
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0); /* Kembali ke posisi awal */
+    opacity: 1;
+  }
+}
 .kartu-statistik:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
