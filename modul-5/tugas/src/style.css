@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+.gallery-item {
+  @apply w-full h-60 object-cover rounded-lg transition-transform duration-300 ease-in-out;
+}
+
+.section-title {
+  @apply text-zinc-900 dark:text-white;
+}
+
+.card-box {
+  @apply bg-[#f0ebe0] dark:bg-zinc-900/50 border border-[#d4c5ae] dark:border-zinc-800 rounded-2xl p-6;
+}
+
+.card-box-gallery {
+  @apply rounded-2xl transition-transform duration-300 ease-in-out;
+}
+
+.card-box-gallery:hover {
+  @apply -translate-y-1 border-amber-600 shadow-lg shadow-amber-700 ;
+}
+
+.text-card-box-gallery {
+  @apply text-zinc-600 dark:text-zinc-400 pl-3 pb-2;
+}
+.card-box-pricing {
+  @apply bg-[#f0ebe0] dark:bg-zinc-900/50 rounded-lg p-6 text-left border border-[#d4c5ae] dark:border-zinc-700 transition-all duration-300 ease-in-out;
+}
+
+.card-box-pricing:hover {
+  @apply -translate-y-1 border-orange-500 shadow-lg shadow-amber-700 scale-103;
+}

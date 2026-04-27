@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLACK IRON DEALERSHIP</title>
+  </head>
+  <body
+    class="bg-[#faf6f0] dark:bg-black text-zinc-900 dark:text-white overflow-x-hidden"
+  >
+    <header
+      class="sticky top-0 z-50 border-b border-orange-500/30 bg-[#faf6f0]/90 dark:bg-black/80 backdrop-blur-xl pl-4 pr-4"
+    >
+      <nav class="container-wrap h-16 flex items-center justify-between">
+        <a
+          href="#"
+          class="text-2xl tracking-[0.3em] text-orange-500 font-extrabold"
+          >BLACK IRON</a
+        >
+
+        <div
+          class="hidden md:flex gap-8 uppercase text-sm font-semibold tracking-widest"
+        >
+          <a href="#fleet" class="hover:text-orange-500">Garage</a>
+          <a href="#pricing" class="hover:text-orange-500">Rates</a>
+          <a href="#testi" class="hover:text-orange-500">Riders</a>
+          <a href="#contact" class="hover:text-orange-500">Book</a>
+        </div>
+
+        <div class="flex gap-2">
+          <button
+            id="themeToggle"
+            class="px-3 py-2 bg-[#ede5d8] dark:bg-zinc-900 border border-[#c2ae92] dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg hover:border-orange-500 transition"
+          >
+            ◐
+          </button>
+          <button
+            id="menuBtn"
+            class="md:hidden px-3 py-2 bg-[#ede5d8] dark:bg-zinc-900 text-zinc-900 dark:text-white rounded-lg"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="mobileNav"
+        class="hidden md:hidden border-t border-[#d4c5ae] dark:border-zinc-800 bg-[#faf6f0] dark:bg-black"
+      >
+        <div class="container-wrap py-4 space-y-3 uppercase text-sm">
+          <a href="#fleet" class="block hover:text-orange-500">Garage</a>
+          <a href="#pricing" class="block hover:text-orange-500">Rates</a>
+          <a href="#testi" class="block hover:text-orange-500">Riders</a>
+          <a href="#contact" class="block hover:text-orange-500">Book</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center pl-4 pr-4">
+      <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1400&auto=format&fit=crop')] bg-cover bg-center"
+      ></div>
+      <!-- overlay: light pakai warm fade, dark pakai black fade -->
+      <div
+        class="absolute inset-0 bg-linear-to-r from-[#faf6f0] via-[#faf6f0]/75 to-transparent dark:from-black dark:via-black/80 dark:to-transparent"
+      ></div>
+
+      <div class="container-wrap relative z-10 py-20">
+        <div class="max-w-3xl">
+          <p
+            class="text-orange-500 font-bold tracking-[0.4em] uppercase animate-pulse"
+          >
+            Elite Motorcycle Rental
+          </p>
+          <h1
+            class="mt-4 text-5xl md:text-7xl font-black uppercase leading-none"
+          >
+            Ride The Beast
+          </h1>
+          <p class="mt-6 text-zinc-600 dark:text-zinc-300 text-lg max-w-xl">
+            Harley Davidson, bobber, cruiser, dan moge kelas atas untuk wedding
+            entrance, touring, konten, dan prestige ride.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              class="px-6 py-3 border border-zinc-400 dark:border-white/20 rounded-xl hover:border-orange-500 transition"
+              >Book Now</a
+            >
+            <a
+              href="#fleet"
+              class="px-6 py-3 border border-zinc-400 dark:border-white/20 rounded-xl hover:border-orange-500 transition"
+              >View Fleet</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fleet" class="container-wrap py-20 pl-4 pr-4">
+      <h1 class="section-title uppercase font-bold text-2xl">Battle Garage</h1>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            Street Glide
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1654128700233-e415ecba7c5a?w=600&auto=format&fit=crop&q=60"
+            alt="Street Glide"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Long ride king.
+          </p>
+        </div>
+
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            Fat Boy
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1585672523890-a00e6ea1bb66?w=600&auto=format&fit=crop&q=60"
+            alt="Fat Boy"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Raw power icon.
+          </p>
+        </div>
+
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            Sportster S
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1671643774118-a55ea38b2202?w=600&auto=format&fit=crop&q=60"
+            alt="Sportster S"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Urban beast.
+          </p>
+        </div>
+
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            Ducati Diavel
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1679778742438-f837af5de005?w=600&auto=format&fit=crop&q=60"
+            alt="Ducati Diavel"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Italian aggression.
+          </p>
+        </div>
+
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            BMW R18
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1656602881911-4c7c181b6e5d?w=600&auto=format&fit=crop&q=60"
+            alt="BMW R18"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Luxury muscle.
+          </p>
+        </div>
+
+        <div class="card-box-gallery">
+          <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
+            Triumph Rocket
+          </h3>
+          <img
+            class="gallery-item"
+            src="https://images.unsplash.com/photo-1769168080800-25ea5aa2ec38?w=600&auto=format&fit=crop&q=60"
+            alt="Triumph Rocket"
+          />
+          <p
+            class="text-card-box-gallery mt-2 text-zinc-600 dark:text-zinc-400"
+          >
+            Massive torque monster.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="pricing"
+      class="bg-[#f0ebe0] dark:bg-zinc-950 border-y border-[#d4c5ae] dark:border-zinc-800 py-20 pl-4 pr-4"
+    >
+      <div class="container-wrap">
+        <h2 class="section-title uppercase text-2xl font-extrabold">
+          Rental Rates
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+          <div class="card-box-pricing">
+            <p>3 Hours</p>
+            <h3 class="text-4xl font-black mt-3">799K</h3>
+          </div>
+          <div
+            class="card-box-pricing border-orange-500 shadow-2xl shadow-orange-500/10 scale-105"
+          >
+            <p>12 Hours</p>
+            <h3 class="text-4xl font-black mt-3">1.4M</h3>
+          </div>
+          <div class="card-box-pricing">
+            <p>24 Hours</p>
+            <h3 class="text-4xl font-black mt-3">2.2M</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testi" class="container-wrap py-20 pl-4 pr-4">
+      <h2 class="section-title uppercase text-2xl font-extrabold">
+        Rider Voices
+      </h2>
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-10">
+        <div class="card-box relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0.5 h-full bg-orange-500"></div>
+          <p class="text-4xl font-black text-orange-500 pl-3">★★★★★</p>
+          <p class="mt-4 text-zinc-700 dark:text-zinc-300 pl-3">
+            "Unit Street Glide datang bersih, suara mesin padat, dan feel
+            riding-nya mewah banget. Touring jadi naik kelas."
+          </p>
+          <div
+            class="mt-6 border-t border-zinc-200 dark:border-white/10 pt-4 pl-3"
+          >
+            <h4 class="font-bold pl-3">Rizky A.</h4>
+            <span class="text-xs uppercase tracking-widest text-zinc-500 pl-3"
+              >Touring Client</span
+            >
+          </div>
+        </div>
+
+        <div class="card-box relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0.5 h-full bg-orange-500"></div>
+          <p class="text-4xl font-black text-orange-500 pl-3">★★★★★</p>
+          <p class="mt-4 text-zinc-700 dark:text-zinc-300 pl-3">
+            "Aku pakai buat wedding entrance. Begitu masuk venue, semua langsung
+            noleh. Momen jadi jauh lebih berkesan."
+          </p>
+          <div
+            class="mt-6 border-t border-zinc-200 dark:border-white/10 pt-4 pl-3"
+          >
+            <h4 class="font-bold pl-3">Dimas F.</h4>
+            <span class="text-xs uppercase tracking-widest text-zinc-500 pl-2"
+              >Wedding Client</span
+            >
+          </div>
+        </div>
+
+        <div class="card-box relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0.5 h-full bg-orange-500"></div>
+          <p class="text-4xl font-black text-orange-500 pl-3">★★★★☆</p>
+          <p class="mt-4 text-zinc-700 dark:text-zinc-300 pl-3">
+            "Proses booking cepat, admin responsif, dan dijelasin detail aturan
+            sewanya. Profesional dari awal sampai selesai."
+          </p>
+          <div
+            class="mt-6 border-t border-zinc-200 dark:border-white/10 pt-4 pl-3"
+          >
+            <h4 class="font-bold pl-3">Kevin T.</h4>
+            <span class="text-xs uppercase tracking-widest text-zinc-500 pl-2"
+              >Business Client</span
+            >
+          </div>
+        </div>
+
+        <div class="card-box relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0.5 h-full bg-orange-500"></div>
+          <p class="text-4xl font-black text-orange-500 pl-3">★★★★★</p>
+          <p class="mt-4 text-zinc-700 dark:text-zinc-300 pl-3">
+            "Biasanya rental takut unit kurang terawat. Di sini beda. Harley-nya
+            sehat, nyaman, dan bikin pengen booking lagi."
+          </p>
+          <div
+            class="mt-6 border-t border-zinc-200 dark:border-white/10 pt-4 pl-3"
+          >
+            <h4 class="font-bold pl-3">Andre S.</h4>
+            <span class="text-xs uppercase tracking-widest text-zinc-500 pl-2"
+              >Repeat Customer</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container-wrap py-20">
+      <div class="card-box p-8">
+        <h2 class="section-title uppercase font-extrabold text-2xl">
+          Claim Your Ride
+        </h2>
+        <form class="grid md:grid-cols-2 gap-4 mt-8">
+          <input
+            class="p-3 rounded-xl bg-[#ede5d8] dark:bg-zinc-900 border border-[#c2ae92] dark:border-zinc-700 text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:border-orange-500 focus:outline focus:outline-orange-500 transition delay-300"
+            placeholder="Nama"
+          />
+          <input
+            class="p-3 rounded-xl bg-[#ede5d8] dark:bg-zinc-900 border border-[#c2ae92] dark:border-zinc-700 text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:border-orange-500 focus:outline focus:outline-orange-500 transition delay-300"
+            placeholder="WhatsApp"
+          />
+          <input
+            class="md:col-span-2 p-3 rounded-xl bg-[#ede5d8] dark:bg-zinc-900 border border-[#c2ae92] dark:border-zinc-700 text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:border-orange-500 focus:outline focus:outline-orange-500 transition delay-300"
+            placeholder="Tanggal Sewa"
+          />
+          <textarea
+            rows="4"
+            class="md:col-span-2 p-3 rounded-xl bg-[#ede5d8] dark:bg-zinc-900 border border-[#c2ae92] dark:border-zinc-700 text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:border-orange-500 focus:outline focus:outline-orange-500 transition delay-300"
+            placeholder="Kebutuhan Anda"
+          ></textarea>
+          <button
+            class="md:col-span-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-xl justify-self-center"
+          >
+            Lock Booking
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#f0ebe0] dark:bg-zinc-950 border-t border-[#d4c5ae] dark:border-zinc-800"
+    >
+      <!-- Main Footer -->
+      <div
+        class="container-wrap px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
+        <!-- Brand -->
+        <div>
+          <a
+            href="#"
+            class="text-2xl tracking-[0.3em] text-orange-500 font-extrabold"
+            >BLACK IRON</a
+          >
+          <p
+            class="mt-4 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed"
+          >
+            Rental motor premium Medan. Harley Davidson, bobber, cruiser & moge
+            kelas atas untuk setiap momen berharga kamu.
+          </p>
+          <!-- Sosmed -->
+          <div class="mt-6 flex gap-4">
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#ede5d8] dark:bg-zinc-800 border border-[#c2ae92] dark:border-zinc-700 hover:border-orange-500 hover:text-orange-500 transition text-sm font-bold"
+              >in</a
+            >
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#ede5d8] dark:bg-zinc-800 border border-[#c2ae92] dark:border-zinc-700 hover:border-orange-500 hover:text-orange-500 transition text-sm font-bold"
+              >ig</a
+            >
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#ede5d8] dark:bg-zinc-800 border border-[#c2ae92] dark:border-zinc-700 hover:border-orange-500 hover:text-orange-500 transition text-sm font-bold"
+              >yt</a
+            >
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#ede5d8] dark:bg-zinc-800 border border-[#c2ae92] dark:border-zinc-700 hover:border-orange-500 hover:text-orange-500 transition text-sm font-bold"
+              >tk</a
+            >
+          </div>
+        </div>
+
+        <!-- Navigasi -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.3em] font-bold text-orange-500 mb-5"
+          >
+            Navigasi
+          </h4>
+          <ul class="space-y-3 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>
+              <a href="#fleet" class="hover:text-orange-500 transition"
+                >Battle Garage</a
+              >
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-orange-500 transition"
+                >Rental Rates</a
+              >
+            </li>
+            <li>
+              <a href="#testi" class="hover:text-orange-500 transition"
+                >Rider Voices</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-orange-500 transition"
+                >Claim Your Ride</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.3em] font-bold text-orange-500 mb-5"
+          >
+            Hubungi Kami
+          </h4>
+          <ul class="space-y-4 text-sm text-zinc-600 dark:text-zinc-400">
+            <li class="flex items-start gap-3">
+              <span class="text-orange-500 mt-0.5">📍</span>
+              <span
+                >Jl. Gatot Subroto No. 88, Sei Sikambing, Medan Sunggal, Kota
+                Medan, Sumatera Utara 20122</span
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-orange-500">📞</span>
+              <a
+                href="tel:+6281234567890"
+                class="hover:text-orange-500 transition"
+                >+62 812-3456-7890</a
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-orange-500">💬</span>
+              <a
+                href="https://wa.me/6281234567890"
+                class="hover:text-orange-500 transition"
+                >WhatsApp Kami</a
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-orange-500">✉️</span>
+              <a
+                href="mailto:hello@blackiron.id"
+                class="hover:text-orange-500 transition"
+                >hello@blackiron.id</a
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-orange-500">🕐</span>
+              <span>Setiap Hari — 08.00 s/d 21.00 WIB</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-[#d4c5ae] dark:border-zinc-800 px-4 py-5">
+        <div
+          class="container-wrap flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-zinc-500 uppercase tracking-widest"
+        >
+          <span>© 2026 Black Iron Dealership — All Rights Reserved</span>
+          <span class="text-orange-500/60">Ride Bold. Ride Iron.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
