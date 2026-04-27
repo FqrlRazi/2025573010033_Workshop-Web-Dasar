@@ -1,0 +1,72 @@
+@import "tailwindcss";
+:root {
+  --primary-color: #0f172a;
+  --primary-light: #1e3a8a;
+  --secondary-color: #0369a1;
+  --accent-color: #0ea5e9;
+  --dark-color: #0c0f1d;
+  --light-color: #f0f9ff;
+  --white-color: #ffffff;
+  --text-color: #1e293b;
+  --border-color: #cbd5e1;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+@layer components {
+  .btn-primary {
+    @apply px-5 py-3 rounded-xl text-white transition;
+    background-color: var(--accent-color);
+  }
+  .btn-primary:hover {
+    filter: brightness(0.9);
+  }
+  .btn-secondary {
+    @apply px-4 py-2 rounded-xl border transition;
+    border-color: var(--border-color);
+  }
+  .btn-secondary:hover {
+    @apply bg-slate-100 dark:bg-slate-700;
+  }
+  .card {
+    @apply p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-md transition-all duration-300;
+  }
+  .service-card {
+    @apply p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-md border-2 border-transparent transition-all duration-300;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.25);
+  }
+  .service-card h3 {
+    @apply text-xl font-bold mb-4 text-center;
+  }
+  .service-card p {
+    @apply text-center text-slate-600 dark:text-slate-300;
+  }
+  .card-icon {
+    @apply text-5xl mb-6 flex justify-center;
+  }
+  .card-button {
+    @apply mt-6 px-4 py-2 rounded-lg text-white block mx-auto transition;
+    background-color: var(--primary-light);
+  }
+  .card-button:hover {
+    filter: brightness(1.1);
+  }
+  .gallery-item {
+    @apply relative overflow-hidden rounded-xl;
+  }
+  .gallery-item img {
+    @apply w-full h-72 object-cover transition duration-300;
+  }
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  .gallery-overlay {
+    @apply absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 transition duration-300;
+    background-color: color-mix(in srgb, var(--primary-light) 50%, transparent);
+  }
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+}

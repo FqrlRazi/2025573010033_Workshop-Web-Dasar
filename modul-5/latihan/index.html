@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoSteam Pro - Jasa Steam Kendaraan Profesional</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body
+    class="bg-[var(--light-color)] text-[var(--text-color)] dark:bg-[var(--dark-color)] dark:text-[var(--light-color)] transition-colors duration-300"
+  >
+    <nav
+      class="border-b border-slate-200/60 dark:border-slate-700/60 sticky top-0 backdrop-blur bg-white/80 dark:bg-slate-900/80 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
+      >
+        <div class="font-bold text-sky-600">
+          <a href="#hero">🚗 AutoSteam Pro</a>
+        </div>
+        <ul class="hidden md:flex gap-6">
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="flex gap-2">
+          <button id="themeToggle" class="btn-secondary">🌙</button>
+          <button id="menuToggle" class="btn-secondary md:hidden">☰</button>
+        </div>
+      </div>
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden max-w-7xl mx-auto px-4 pb-4 space-y-2"
+      >
+        <a href="#services" class="block">Layanan</a>
+        <a href="#gallery" class="block">Galeri</a>
+        <a href="#about" class="block">Tentang</a>
+        <a href="#contact" class="block">Kontak</a>
+      </div>
+    </nav>
+
+    <section
+      id="hero"
+      class="min-h-screen grid place-items-center bg-linear-to-br from-[var(--primary-color)] to-[var(--primary-light)] text-white"
+    >
+      <div class="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl md:text-6xl font-extrabold">
+          Kendaraan Bersih Seperti Baru
+        </h1>
+        <p class="mt-4">
+          Jasa steam kendaraan profesional dengan teknologi terkini sejak 2000
+        </p>
+        <div class="mt-4 inline-block bg-white/20 px-4 py-2 rounded-full">
+          Dipercaya Lebih dari 20 Tahun
+        </div>
+        <button class="btn-primary mt-6">Pesan Sekarang</button>
+      </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
+          Layanan Kami
+        </h2>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div class="service-card">
+            <div class="card-icon">🚗</div>
+            <h3>Steam Mobil</h3>
+            <p>
+              Pembersihan menyeluruh menggunakan teknologi steam pressure untuk
+              hasil maksimal.
+            </p>
+            <button class="card-button">Pelajari Lebih</button>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🏍️</div>
+            <h3>Steam Motor</h3>
+            <p>
+              Perawatan motor dengan steam yang ramah lingkungan dan efektif
+              membunuh bakteri.
+            </p>
+            <button class="card-button">Pelajari Lebih</button>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">✨</div>
+            <h3>Detailing Premium</h3>
+            <p>
+              Layanan detailing lengkap untuk hasil interior dan eksterior
+              seperti mobil baru.
+            </p>
+            <button class="card-button">Pelajari Lebih</button>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🛡️</div>
+            <h3>Coating Protection</h3>
+            <p>
+              Pelapis proteksi untuk menjaga kilau dan melindungi cat kendaraan
+              Anda dari cuaca.
+            </p>
+            <button class="card-button">Pelajari Lebih</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="gallery"
+      class="py-16 md:py-20 lg:py-24 bg-[var(--primary-color)]"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
+          Hasil Kerja Kami
+        </h2>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div class="gallery-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1663013309657-8b3a2a00849e?q=80&w=1170"
+              alt="Steam Mobil 1"
+            />
+            <div class="gallery-overlay">
+              <p>Steam Detailing Mobil</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400"
+              alt="Motor Shiny"
+            />
+            <div class="gallery-overlay"><p>Motor Berkilau</p></div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=600"
+              alt="Detailing Eksterior"
+            />
+            <div class="gallery-overlay"><p>Detailing Eksterior</p></div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400"
+              alt="Interior Bersih"
+            />
+            <div class="gallery-overlay"><p>Pembersihan Interior</p></div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1714348938045-0c74379cd4d9?w=600"
+              alt="Mobil Premium"
+            />
+            <div class="gallery-overlay"><p>Mobil Premium</p></div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1706515293122-84d23c5a7a8b?w=600"
+              alt="Motor Racing"
+            />
+            <div class="gallery-overlay"><p>Motor Racing</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
+          Tentang AutoSteam Pro
+        </h2>
+        <div class="grid lg:grid-cols-2 gap-10">
+          <div>
+            <p>
+              <strong>AutoSteam Pro</strong> adalah bisnis jasa steam kendaraan
+              terpercaya yang telah melayani pelanggan sejak
+              <strong>tahun 2000</strong>. Dengan pengalaman lebih dari 20
+              tahun, kami telah menjadi pilihan utama untuk perawatan kendaraan
+              di kota ini.
+            </p>
+            <p class="mt-4">
+              Kami menggunakan teknologi steam pressure terkini yang ramah
+              lingkungan dan efektif membunuh 99.9% bakteri tanpa merusak
+              material kendaraan Anda. Tim profesional kami terlatih dan
+              berpengalaman dalam menangani berbagai jenis kendaraan.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li>✓ Teknologi steam pressure terkini</li>
+              <li>✓ Ramah lingkungan dan aman</li>
+              <li>✓ Tim profesional berpengalaman</li>
+              <li>✓ Hasil garansi kepuasan 100%</li>
+              <li>✓ Harga kompetitif dan terjangkau</li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="card text-center">
+              <div class="text-2xl font-bold text-sky-600">20+</div>
+              <div>Tahun Pengalaman</div>
+            </div>
+            <div class="card text-center">
+              <div class="text-2xl font-bold text-sky-600">5000+</div>
+              <div>Pelanggan Puas</div>
+            </div>
+            <div class="card text-center">
+              <div class="text-2xl font-bold text-sky-600">100%</div>
+              <div>Garansi Kepuasan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="bg-[var(--primary-color)] text-white">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-6"
+      >
+        <div>
+          <h4>🚗 AutoSteam Pro</h4>
+          <p>Jasa steam kendaraan profesional terpercaya sejak 2000.</p>
+          <p class="mt-2">WhatsApp • Instagram • Facebook</p>
+        </div>
+        <div>
+          <h4>Layanan</h4>
+          <p>
+            Steam Mobil • Steam Motor • Detailing Premium • Coating Protection
+          </p>
+        </div>
+        <div>
+          <h4>Kontak Kami</h4>
+          <p>📞 Telepon: +62 812-3456-7890</p>
+          <p>💬 WhatsApp: +62 812-3456-7890</p>
+          <p>📍 Alamat: Jl. Merdeka No. 123, Kota, Indonesia</p>
+          <p>⏰ Jam Operasional: Senin-Minggu 08:00-18:00</p>
+        </div>
+      </div>
+      <div class="text-center py-4 border-t border-white/20">
+        &copy; 2024 AutoSteam Pro. Bisnis berdiri sejak 2000. Semua hak
+        dilindungi.
+      </div>
+    </footer>
+  </body>
+</html>
