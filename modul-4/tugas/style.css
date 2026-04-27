@@ -212,7 +212,7 @@ body {
 }
 
 .services h2,
-.gallery h2,
+.gallery h2, 
 .about h2 {
   font-size: 2rem;
   margin-bottom: var(--spacing-xl);
