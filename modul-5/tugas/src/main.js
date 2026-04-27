@@ -13,7 +13,7 @@ if (savedTheme === "dark") {
 } else {
   document.documentElement.classList.remove("dark");
   themeToggle.textContent = "◑";
-}
+} 
 
 themeToggle.addEventListener("click", () => {
   const isDark = document.documentElement.classList.toggle("dark");
