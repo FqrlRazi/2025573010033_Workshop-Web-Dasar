@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Events JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h2 {
+        margin-top: 40px;
+      }
+      #kontainer-warna {
+        display: flex;
+        gap: 10px;
+      }
+      .btn-warna {
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+      }
+      .aktif {
+        outline: 3px solid black;
+      }
+      #preview-warna {
+        margin-top: 10px;
+        padding: 20px;
+        background: #eee;
+      }
+      textarea {
+        width: 100%;
+        height: 80px;
+      }
+      #hitung-char {
+        font-size: 14px;
+      }
+      .field {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+      .field-aktif {
+        border-color: blue;
+        background: #eef;
+      }
+      #scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 5px;
+        background: green;
+        width: 0%;
+      }
+      .spacer {
+        height: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <h1>Demo Event JavaScript</h1>
+    
+    <!-- Event Delegation -->
+    <h2>Pilih Warna</h2>
+    <div id="kontainer-warna">
+      <button
+        class="btn-warna"
+        data-warna="#E74C3C"
+        style="background: #e74c3c"
+      >
+        Merah
+      </button>
+      <button
+        class="btn-warna"
+        data-warna="#3498DB"
+        style="background: #3498db"
+      >
+        Biru
+      </button>
+      <button
+        class="btn-warna"
+        data-warna="#2ECC71"
+        style="background: #2ecc71"
+      >
+        Hijau
+      </button>
+    </div>
+    <div id="preview-warna">Warna: -</div>
+    
+    <!-- Input Event -->
+    <h2>Input Text</h2>
+    <textarea id="teks-area" placeholder="Ketik sesuatu..."></textarea>
+    <div id="hitung-char">0 / 150</div>
+    
+    <!-- Keyboard Event -->
+    <h2>Keyboard Event</h2>
+    <div id="log-keyboard"></div>
+    
+    <!-- Focus & Blur -->
+    <h2>Focus & Blur</h2>
+    <div class="field">
+      <input type="text" class="field-fokus" placeholder="Nama" />
+    </div>
+    <div class="field">
+      <input type="text" class="field-fokus" placeholder="Email" />
+    </div>
+    
+    <!-- Spacer for scroll -->
+    <div class="spacer"></div>
+
+    <script src="04-events.js"></script>
+  </body>
+</html>
