@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Tugas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Todo List Interaktif</h1>
+        <p class="lead">Tambah tugas, pilih prioritas, tandai selesai, filter, dan simpan otomatis di browser.</p>
+      </div>
+      <div class="counter-box">
+        <span id="remainingCount">0</span>
+        <p>tugas tersisa</p>
+      </div>
+    </header>
+
+    <section class="task-form-card">
+      <form id="taskForm" novalidate>
+        <label for="taskInput">Tambah tugas baru</label>
+        <div class="input-group">
+          <input id="taskInput" name="task" type="text" placeholder="Contoh: Belajar DOM" maxlength="100" required />
+          <select id="priorityInput" name="priority" aria-label="Pilih prioritas tugas">
+            <option value="sedang" selected>Sedang</option>
+            <option value="rendah">Rendah</option>
+            <option value="tinggi">Tinggi</option>
+          </select>
+          <button type="submit">Tambah</button>
+        </div>
+        <p class="error-message" id="inputError" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="task-controls">
+      <div class="filters" role="group" aria-label="Filter tugas">
+        <button type="button" class="filter-button active" data-filter="semua">Semua</button>
+        <button type="button" class="filter-button" data-filter="aktif">Aktif</button>
+        <button type="button" class="filter-button" data-filter="selesai">Selesai</button>
+      </div>
+      <button type="button" class="secondary-button" id="clearCompleted">Hapus Semua Selesai</button>
+    </section>
+
+    <section class="task-list-card">
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
