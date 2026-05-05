@@ -1,0 +1,152 @@
+/* form-validasi.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 440px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.field-grup {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+input.valid {
+  border-color: #10b981;
+}
+
+input.invalid {
+  border-color: #ef4444;
+}
+
+.pesan-error {
+  display: block;
+  font-size: 0.78rem;
+  color: #ef4444;
+  margin-top: 0.3rem;
+  min-height: 1.1em;
+}
+
+.indikator-kekuatan {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  transition:
+    width 0.3s,
+    background 0.3s;
+}
+
+.teks-kekuatan {
+  font-size: 0.75rem;
+  color: #888;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+#btn-daftar {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+#btn-daftar:hover {
+  background: #2563eb;
+}
+
+#btn-daftar:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.sukses {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  color: #065f46;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.tersembunyi {
+  display: none;
+}
