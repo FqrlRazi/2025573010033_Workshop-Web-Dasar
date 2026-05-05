@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan 1 - Kalkulator Interaktif</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #666;
+    }
+    .calculator {
+      height: 65vh;
+      width: 320px;
+      padding: 20px;
+      border-radius: 20px;
+      background: #333;
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+    }
+    .display {
+      width: 100%;
+      height: 65px;
+      margin-bottom: 5vh;
+      padding-right: 8px;
+      border: 2px solid #e0e4ee;
+      border-radius: 12px;
+      font-size: 2rem;
+      line-height: 60px;
+      text-align: right;
+      background: #f8fbff;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    button {
+      padding: 18px 0;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.1s ease, background 0.2s ease;
+      background: #eef2ff;
+      color: #1a1f3a;
+    }
+    button:hover {
+      transform: translateY(-1px);
+    }
+    button.operator {
+      background: #4f46e5;
+      color: #fff;
+    }
+    button.equal {
+      grid-column: span 2;
+      background: #10b981;
+      color: #fff;
+    }
+    button.clear {
+      background: #ef4444;
+      color: #fff;
+    }
+    button.zero {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <section class="calculator" aria-label="Kalkulator Interaktif">
+    <div id="display" class="display" aria-live="polite">0</div>
+    <div class="buttons" id="buttonContainer">
+      <button type="button" class="clear" data-action="clear">C</button>
+      <button type="button" class="operator" data-action="operator" data-value="/">÷</button>
+      <button type="button" class="operator" data-action="operator" data-value="*">×</button>
+      <button type="button" class="operator" data-action="operator" data-value="-">−</button>
+
+      <button type="button" data-action="digit" data-value="7">7</button>
+      <button type="button" data-action="digit" data-value="8">8</button>
+      <button type="button" data-action="digit" data-value="9">9</button>
+      <button type="button" class="operator" data-action="operator" data-value="+">+</button>
+
+      <button type="button" data-action="digit" data-value="4">4</button>
+      <button type="button" data-action="digit" data-value="5">5</button>
+      <button type="button" data-action="digit" data-value="6">6</button>
+      <button type="button" class="operator" data-action="decimal" data-value=".">.</button>
+
+      <button type="button" data-action="digit" data-value="1">1</button>
+      <button type="button" data-action="digit" data-value="2">2</button>
+      <button type="button" data-action="digit" data-value="3">3</button>
+      <button type="button" class="operator" data-action="delete">⌫</button>
+      <button type="button" class="equal" data-action="calculate">=</button>
+
+      <button type="button" class="zero" data-action="digit" data-value="0">0</button>
+    </div>
+  </section>
+  <script src="latihan-1.js"></script>
+</body>
+</html>
