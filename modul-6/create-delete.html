@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buat & Hapus Elemen</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+        max-width: 500px;
+      }
+      .input-grup {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      input {
+        flex: 1;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      #btn-tambah {
+        background: #2e86c1;
+        color: white;
+      }
+      #btn-hapus-semua {
+        background: #e74c3c;
+        color: white;
+      }
+      #list-tugas {
+        list-style: none;
+        padding: 0;
+      }
+      .item-tugas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        margin-bottom: 6px;
+        background: white;
+      }
+      .btn-hapus {
+        background: #fdedec;
+        color: #e74c3c;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 2px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Daftar Tugas</h1>
+    <div class="input-grup">
+      <input type="text" id="input-tugas" placeholder="Tambah tugas baru..." />
+      <button id="btn-tambah">Tambah</button>
+      <button id="btn-hapus-semua">Hapus Semua</button>
+    </div>
+    <ul id="list-tugas">
+      <li class="item-tugas">
+        Belajar HTML
+        <button class="btn-hapus" onclick="this.parentElement.remove()">
+          ✕
+        </button>
+      </li>
+      <li class="item-tugas">
+        Belajar CSS
+        <button class="btn-hapus" onclick="this.parentElement.remove()">
+          ✕
+        </button>
+      </li>
+    </ul>
+    
+    <script src="create-delete.js"></script>
+  </body>
+</html>
